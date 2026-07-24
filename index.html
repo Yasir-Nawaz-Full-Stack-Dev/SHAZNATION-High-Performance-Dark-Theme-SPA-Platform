@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Shaznation | One Nation. Multiple Innovations.</title>
+<meta name="description" content="Shaznation — a unified ecosystem for gaming, tech education, hardware and connectivity. Learn. Play. Trade. Connect." />
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<!-- Tailwind CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/3.4.4/tailwind.min.js"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          'shaz-green': '#a4ff00',
+          'shaz-orange': '#ff3c30',
+          'shaz-blue': '#0099ff',
+          'shaz-dark': '#000000',
+          'shaz-surface': '#0a0a0a',
+        },
+        fontFamily: {
+          poppins: ['Poppins', 'sans-serif'],
+        },
+      },
+    },
+  };
+</script>
+
+<!-- Site styles -->
+<link rel="stylesheet" href="/style.css">
+</head>
+<body class="font-poppins bg-black text-white overflow-x-hidden">
+
+  <!-- ============ 3D BACKGROUND ============ -->
+  <div id="bg-container"><canvas id="wave-canvas"></canvas></div>
+
+  <!-- ============ HEADER / NAVBAR ============ -->
+  <header class="site-header" id="site-header">
+    <nav class="navbar" id="navbar">
+      <div class="logo" id="nav-logo">
+        <img src="/shaznation_main.png" alt="SHAZNATION">
+      </div>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home" class="nav-link" data-close>Home</a></li>
+        <li><a href="#about" class="nav-link" data-close>About</a></li>
+        <li><a href="#divisions" class="nav-link" data-close>Divisions</a></li>
+        <li><a href="#why" class="nav-link" data-close>Why Us</a></li>
+        <li><a href="#process" class="nav-link" data-close>Process</a></li>
+        <li><a href="#features" class="nav-link" data-close>Features</a></li>
+        <li class="nav-cta"><a href="#contact" data-close>Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+
+    <!-- ============ SECTION 1 — HERO ============ -->
+    <section class="hero" id="home">
+      <p class="hero-eyebrow">Est. 2026 &bull; A Digital Ecosystem</p>
+      <h1 class="hero-title">ONE <span class="green">NATION.</span></h1>
+      <h1 class="hero-title" style="color:var(--shaz-orange)">MULTIPLE INNOVATIONS.</h1>
+      <p class="hero-tagline">Learn <span class="dot">&bull;</span> Play <span class="dot">&bull;</span> Trade <span class="dot">&bull;</span> Connect</p>
+
+      <div class="hero-cta-row">
+        <a href="#divisions" class="btn btn-solid">Explore Divisions</a>
+        <a href="#contact" class="btn btn-outline">Join The Nation</a>
+      </div>
+
+      <a href="#about" class="scroll-cue" aria-label="Scroll down">
+        <span></span>
+      </a>
+    </section>
+
+    <!-- ============ SECTION 2 — ABOUT ============ -->
+    <section class="about-section" id="about">
+      <div class="about-text">
+        <p class="section-eyebrow">Who We Are</p>
+        <h2>Shaznation</h2>
+        <p>Shaznation is a next-generation umbrella brand built around one idea: gaming, technology, and business shouldn't live in separate corners of the internet. We bring esports, tech education, premium hardware, and reliable connectivity together under a single, connected ecosystem so every part of your digital journey works as one.</p>
+<p>Every division carries the same DNA built for performance, designed for community, and made to grow with the people who use it.</p>
+
+        <div class="about-chips">
+          <div class="chip"><strong>4</strong><span>Core Divisions</span></div>
+          <div class="chip"><strong>1</strong><span>Unified Ecosystem</span></div>
+          <div class="chip"><strong>2026</strong><span>Founded</span></div>
+        </div>
+      </div>
+
+      <div class="video-box">
+        <video autoplay muted loop playsinline class="about-video">
+          <source src="Untitled_design.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </section>
+
+  <!-- ============ SECTION 3 — DIVISIONS ============ -->
+<section class="divisions-section" id="divisions">
+  <p class="section-eyebrow center">What We Do</p>
+  <h2 class="section-title">Our Divisions</h2>
+  <p class="section-subtitle">Four pillars, one nation. Each division is built to stand on its own — and to work better together.</p>
+
+  <div class="division-grid">
+
+    <div class="card" id="card-esports">
+      <div class="card-logo-wrap">
+        <img src="/shazesports_logo.png" alt="ShazEsports">
+      </div>
+      <div class="card-body">
+        <p>Competitive gaming platform built for tournaments, ranked play, and professional streaming infrastructure.</p>
+        <a href="#" class="card-btn">Enter</a>
+      </div>
+    </div>
+
+    <div class="card" id="card-tech">
+      <div class="card-logo-wrap">
+        <img src="/shaztech_logo.png" alt="ShazTech">
+      </div>
+      <div class="card-body">
+        <p>Hands-on tech academy teaching networking, IT support, and development skills for real-world careers.</p>
+        <a href="#" class="card-btn">Learn</a>
+      </div>
+    </div>
+
+    <div class="card" id="card-gear">
+      <div class="card-logo-wrap">
+        <img src="/shazgear_logo.png" alt="ShazGear">
+      </div>
+      <div class="card-body">
+        <p>Curated gaming hardware and PC components, chosen for performance from entry-level to pro rigs.</p>
+        <a href="#" class="card-btn">Trade</a>
+      </div>
+    </div>
+
+    <div class="card" id="card-connect">
+      <div class="card-logo-wrap">
+        <img src="/shazconnect_logo.png" alt="ShazConnect">
+      </div>
+      <div class="card-body">
+        <p>Reliable internet and IT infrastructure keeping homes and businesses connected around the clock.</p>
+        <a href="#" class="card-btn">Connect</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+    <!-- ============ SECTION 4 — WHY SHAZNATION ============ -->
+    <section class="why-section" id="why">
+      <p class="section-eyebrow center">Why Shaznation</p>
+      <h2 class="section-title">Built Different, On Purpose</h2>
+      <p class="section-subtitle">We're not stitching four random products together &mdash; every division was designed to feed the next.</p>
+
+      <div class="why-grid">
+        <div class="why-card">
+          <div class="why-icon" style="color:var(--shaz-green);">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M12 3a9 9 0 0 1 0 18M3 12h18"/></svg>
+          </div>
+          <h3>Unified Ecosystem</h3>
+          <p>One account, one identity, four divisions &mdash; no fragmented logins or disconnected experiences.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon" style="color:var(--shaz-orange);">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 21s-7-4.5-9-9a5 5 0 0 1 9-4 5 5 0 0 1 9 4c-2 4.5-9 9-9 9z"/></svg>
+          </div>
+          <h3>Community First</h3>
+          <p>Every feature is shaped around the people using it &mdash; gamers, learners, builders, and business owners alike.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon" style="color:var(--shaz-blue);">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M13 2 3 14h7l-1 8 10-12h-7l1-8z"/></svg>
+          </div>
+          <h3>Future-Ready Tech</h3>
+          <p>Built on modern infrastructure from day one, so new features ship fast without breaking what already works.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon" style="color:var(--shaz-green);">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 21V9l8-6 8 6v12"/><path d="M9 21v-6h6v6"/></svg>
+          </div>
+          <h3>Local Roots</h3>
+          <p>Grown from the ground up with real community and business needs in mind, not a copy-paste global template.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SECTION 5 — PROCESS / ECOSYSTEM FLOW ============ -->
+    <section class="process-section" id="process">
+      <p class="section-eyebrow center">How It Works</p>
+      <h2 class="section-title">The Shaznation Flow</h2>
+      <p class="section-subtitle">Four divisions, one journey &mdash; move through the ecosystem at your own pace.</p>
+
+      <div class="process-grid">
+        <div class="process-step process-card">
+          <span class="process-num" style="color:var(--shaz-green);">01</span>
+          <h3>Learn</h3>
+          <p>Master real-world skills in networking, IT, software development, and AI & taught hands-on by industry practitioners, not just textbooks.</p>
+        </div>
+        <div class="process-step process-card">
+          <span class="process-num" style="color:var(--shaz-orange);">02</span>
+          <h3>Play</h3>
+          <p>Sharpen those skills and your reflexes in the competitive arena of ShazEsports.</p>
+        </div>
+        <div class="process-step process-card">
+          <span class="process-num" style="color:var(--shaz-blue);">03</span>
+          <h3>Trade</h3>
+          <p>Upgrade your setup with performance hardware from ShazGear.</p>
+        </div>
+        <div class="process-step process-card">
+          <span class="process-num" style="color:var(--shaz-green);">04</span>
+          <h3>Connect</h3>
+          <p>Stay online and supported everywhere, powered by ShazConnect.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SECTION 6 — UPCOMING FEATURES ============ -->
+    <section class="features-section" id="features">
+      <p class="section-eyebrow center">On The Roadmap</p>
+      <h2 class="section-title">Upcoming Platform Features</h2>
+      <p class="section-subtitle">Here's what we're actively building for the Shaznation platform.</p>
+
+      <div class="features-grid">
+        <div class="f-card">
+          <div class="f-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2l2.4 7.2H22l-6 4.4 2.3 7.4L12 16.8 5.7 21l2.3-7.4-6-4.4h7.6z"/></svg></div>
+          <h4>Premium Animated UI</h4>
+          <p>Futuristic motion design and glowing backgrounds inspired by modern gaming interfaces.</p>
+        </div>
+        <div class="f-card">
+          <div class="f-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7"/></svg></div>
+          <h4>User Login System</h4>
+          <p>Secure sign-up and login with a personal dashboard and profile management.</p>
+        </div>
+        <div class="f-card">
+          <div class="f-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M3 9h18"/></svg></div>
+          <h4>ISP Packages Portal</h4>
+          <p>A dedicated internet packages section with clear pricing and coverage information.</p>
+        </div>
+        <div class="f-card">
+          <div class="f-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 6h15l-1.5 9h-12z"/><circle cx="9" cy="20" r="1"/><circle cx="17" cy="20" r="1"/><path d="M3 3h3l1 3"/></svg></div>
+          <h4>Ecommerce Platform</h4>
+          <p>A full online store for ShazGear hardware, peripherals, and accessories.</p>
+        </div>
+        <div class="f-card">
+          <div class="f-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 4h16v6H4z"/><path d="M8 10v10M16 10v10M4 20h16"/></svg></div>
+          <h4>Tournament System</h4>
+          <p>Registration, automated brackets, and live leaderboards for ShazEsports events.</p>
+        </div>
+        <div class="f-card">
+          <div class="f-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg></div>
+          <h4>Admin Dashboard</h4>
+          <p>A centralized control panel to manage users, products, and services across divisions.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SECTION 7 — COMMUNITY / BUILT FOR ============ -->
+    <section class="community-section" id="community">
+      <p class="section-eyebrow center">Who It's For</p>
+      <h2 class="section-title">Built For Everyone In The Nation</h2>
+      <p class="section-subtitle">Whichever door you walk in through, the whole ecosystem is right behind it.</p>
+
+      <div class="community-grid">
+        <div class="community-card">
+          <div class="community-icon" style="color:var(--shaz-green);">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="2" y="7" width="20" height="12" rx="2"/><circle cx="8" cy="13" r="2"/><path d="M14 11h4M14 15h4"/></svg>
+          </div>
+          <h3>Gamers &amp; Streamers</h3>
+          <p>Competitive play, tournaments, and the gear to back it up.</p>
+        </div>
+        <div class="community-card">
+          <div class="community-icon" style="color:var(--shaz-blue);">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M22 10 12 5 2 10l10 5 10-5z"/><path d="M6 12v5c3 2 9 2 12 0v-5"/></svg>
+          </div>
+          <h3>Students &amp; Learners</h3>
+          <p>Practical tech education that turns into real, usable skills.</p>
+        </div>
+        <div class="community-card">
+          <div class="community-icon" style="color:var(--shaz-orange);">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 21V8l8-5 8 5v13"/><path d="M9 21v-7h6v7"/></svg>
+          </div>
+          <h3>Businesses</h3>
+          <p>Dependable connectivity and IT support that keeps you running.</p>
+        </div>
+        <div class="community-card">
+          <div class="community-icon" style="color:var(--shaz-green);">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3v18M3 12h18"/><circle cx="12" cy="12" r="9"/></svg>
+          </div>
+          <h3>Builders &amp; Creators</h3>
+          <p>Hardware and tools built for makers who push their setup further.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SECTION 8 — FAQ ============ -->
+    <section class="faq-section" id="faq">
+      <p class="section-eyebrow center">Questions</p>
+      <h2 class="section-title">Frequently Asked Questions</h2>
+
+      <div class="faq-list" id="faq-list">
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>What exactly is Shaznation?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Shaznation is an umbrella ecosystem made up of four divisions &mdash; esports, tech education, hardware, and connectivity &mdash; designed to work together under one brand.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>When do the platform features launch?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>We're actively building the features listed in our roadmap section. Follow our contact channel below to get notified as each one goes live.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>Can I join more than one division?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Yes. All four divisions are designed to work under a single account, so you can learn, play, trade, and stay connected without switching platforms.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>Is Shaznation available in my area?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>ShazEsports, ShazTech, and ShazGear are accessible online wherever you are. ShazConnect's coverage depends on region &mdash; reach out and we'll confirm availability.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>How do I get in touch?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Email us any time at the address in the contact section below &mdash; we read every message.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SECTION 9 — CONTACT / CTA ============ -->
+    <section class="contact-section" id="contact">
+      <p class="section-eyebrow center">Get In Touch</p>
+      <h2 class="contact-title">Build The Future With Shaznation</h2>
+      <p class="contact-subtitle">Ready to grow your digital ecosystem? Become part of the next generation.</p>
+      <a href="mailto:info@shaznation.com" class="email-btn">info@shaznation.com</a>
+    </section>
+
+  </main>
+
+ <footer class="site-footer" id="site-footer">
+  <div class="footer-inner">
+
+    <div class="footer-brand">
+      <div class="footer-logo-row">
+        <div class="footer-logo-box">
+          <img src="/shaznation_main.png" alt="SHAZNATION" class="footer-logo">
+        </div>
+       <p class="footer-logo-text">One Nation.<br>Multiple Innovations.</p>
+      </div>
+    </div>
+
+    <div class="footer-links">
+      <h5>Explore</h5>
+      <a href="#about">About</a>
+      <a href="#divisions">Divisions</a>
+      <a href="#process">Process</a>
+      <a href="#features">Features</a>
+    </div>
+
+    <div class="footer-links">
+      <h5>Support</h5>
+      <a href="#community">Community</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+    <div class="footer-social">
+      <h5>Follow</h5>
+      <div class="social-icons">
+        <a href="https://www.linkedin.com/in/shaz-nation-26a705424/" aria-label="LinkedIn" class="social-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="9" width="4" height="11"/><circle cx="5" cy="4" r="2"/><path d="M11 20v-7a3 3 0 0 1 6 0v7M11 9v11"/></svg>
+        </a>
+        <a href="https://www.instagram.com/shaznation2026/reels/" aria-label="Instagram" class="social-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>
+        </a>
+        <a href="https://www.facebook.com/profile.php?id=61591782766490" aria-label="Facebook" class="social-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M15 8h-2a2 2 0 0 0-2 2v3H9v3h2v6h3v-6h2.2l.8-3H14v-2a1 1 0 0 1 1-1h2z"/></svg>
+        </a>
+        <a href="https://www.tiktok.com/@shaznationgamingzone?_r=1&_t=ZS-98FWUd4j821" aria-label="TikTok" class="social-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M14 3v10.5a3.5 3.5 0 1 1-3-3.46"/><path d="M14 3a5 5 0 0 0 5 5"/></svg>
+        </a>
+        <a href="#" aria-label="Website" class="social-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg>
+        </a>
+      </div>
+    </div>
+
+  </div>
+
+  <p class="copyright">&copy; 2026 Shaznation. All Rights Reserved.</p>
+</footer>
+  <!-- ============ SCRIPTS ============ -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="/three-bg.js"></script>
+  <script src="/main.js"></script>
+</body>
+</html>
